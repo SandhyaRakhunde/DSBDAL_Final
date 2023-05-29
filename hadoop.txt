@@ -1,0 +1,17 @@
+﻿>gedit input.txt
+
+>cd hadoop-3.3.5/
+>cd sbin/
+>start-dfs.sh
+>start-yarn.sh
+>jps
+>hdfs dfs -mkdir /folderName
+>hadoop fs -put /home/hadoop/input.txt /folderName
+>yarn jar /home/hadoop/hadoop-3.3.5/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.5.jar wordcount /folderName /output
+>hdfs dfs -cat /output/part-r-00000
+
+
+
+
+
+>yarn jar /home/hadoop/hadoop-3.3.5/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.5.jar wordcount /gf /o5
